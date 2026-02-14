@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Newsletter sign-up with success message</title>
+
+
+    <meta name="description"
+        content="Solution to Newsletter sign up form with success message challenge on Frontend Mentor">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/form.css">
+
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+    <main>
+
+        <div class="container">
+
+            <!-- newsletter subscription start -->
+            <article class="newsletter  newsletter--subscription" id="newsletterSubscription">
+
+                <header class="newsletter__header">
+                    <picture>
+                        <source media="(min-width: 992px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+
+                        <source media="(min-width: 400px)" srcset="./assets/images/illustration-sign-up-tablet.svg">
+
+                        <img class="newsletter__image" src="./assets/images/illustration-sign-up-mobile.svg"
+                            alt="Data analytics dashboard with charts">
+                    </picture>
+                </header>
+
+
+                <div class="newsletter__body">
+
+                    <!-- newsletter content start -->
+                    <div class="newsletter__content">
+
+                        <h1 class="newsletter__title">
+                            Stay updated!
+                        </h1>
+                        <p class="newsletter__text">
+                            Join 60,000+ product managers receiving monthly updates on:
+                        </p>
+
+                        <ul class="newsletter__features">
+                            <li class="newsletter__feature">
+                                Product discovery and building what matters
+                            </li>
+                            <li class="newsletter__feature">
+                                Measuring to ensure updates are a success
+                            </li>
+                            <li class="newsletter__feature">
+                                And much more!
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- newsletter content end -->
+
+
+                    <!-- sign-up form start -->
+                    <form class="form" novalidate id="form">
+
+                        <div class="wrapper">
+                            <label class="form__label" for="email">
+                                Email address
+                            </label>
+                            <span class="error-message" aria-live="polite">Valid email required</span>
+                        </div>
+
+                        <input class="input" id="email" name="email" type="email" placeholder="email@company.com">
+
+                        <button class="button  button--submit" type="submit" id="btnSubmit">
+                            Subscribe to monthly newsletter
+                        </button>
+
+                    </form>
+                    <!-- sign-up form end -->
+
+                </div>
+
+            </article>
+            <!-- newsletter subscription end -->
+
+
+            <!-- newsletter confirmation start -->
+            <article class="newsletter  newsletter--confirmation  hidden" id="newsletterConfirmation">
+
+                <!-- newsletter body start -->
+                <div class="newsletter__body">
+
+                    <!-- newsletter content start -->
+                    <div class="newsletter__content">
+
+                        <img class="newsletter__icon" src="./assets/images/icon-success.svg" alt="Icon success"
+                            aria-hidden="true">
+
+                        <h2 class="newsletter__title">
+                            Thanks for subscribing!
+                        </h2>
+
+                        <p class="newsletter__text">
+                            A confirmation email has been sent to
+                            <span id="emailUser"></span>.
+                            Please open it and click the button inside to confirm your subscription.
+                        </p>
+
+                        <button class="button  button--dismiss" type="button" id="btnConfirmation">
+                            Dismiss message
+                        </button>
+
+                    </div>
+                    <!-- newsletter content end -->
+
+                </div>
+                <!-- newsletter body end -->
+
+            </article>
+            <!-- newsletter confirmation end -->
+
+
+        </div>
+        <!-- container end -->
+
+    </main>
+
+
+
+
+
+    <footer class="footer">
+
+        <small class="attribution">
+            Challenge by <a class="attribution__link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+                rel="noopener noreferrer">Frontend Mentor</a>.
+
+            Coded by
+            <a class="attribution__link" href="https://github.com/amansgz" target="_blank" rel="noopener noreferrer">
+                @amansgz</a>
+        </small>
+
+    </footer>
+
+</body>
+
+</html>
