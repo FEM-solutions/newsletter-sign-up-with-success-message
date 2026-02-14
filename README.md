@@ -38,7 +38,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://amansgz.github.io/javascript-fundamentals/newsletter-sign-up-with-success-message/index.html](https://amansgz.github.io/javascript-fundamentals/newsletter-sign-up-with-success-message/index.html)
+- Live Site URL: [https://fem-solutions.github.io/newsletter-sign-up-with-success-message](https://fem-solutions.github.io/newsletter-sign-up-with-success-message)
 
 ## My process
 
