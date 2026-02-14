@@ -10,7 +10,7 @@ Users should be able to:
 
 const form = document.getElementById("form");
 const inputEmail = document.querySelector(".input");
-const btnSubmit = document.getElementById("btnSubmit");
+
 const btnConfirmation = document.getElementById("btnConfirmation");
 
 const newsletterSubscription = document.getElementById(
@@ -27,7 +27,7 @@ form.addEventListener("submit", (e) => {
   const emailValue = inputEmail.value;
   const validation = validate_email(emailValue);
 
-  if (!validation || inputEmail.value == "") {
+  if (!validation || inputEmail.value === "") {
     form.classList.add("error-state");
   }
   if (validation) {
