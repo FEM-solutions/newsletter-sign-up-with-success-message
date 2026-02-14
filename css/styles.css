@@ -36,6 +36,7 @@
   --blue-700: hsl(235, 18%, 26%);
   --grey: hsl(0, 0%, 58%);
   --white: hsl(0, 0%, 100%);
+  --soft-red: hsl(4, 92%, 90%);
 
   /* Fonts */
   --ff-body: "Roboto", sans-serif;
@@ -186,7 +187,7 @@ img {
   #MEDIA-QUERIES 
 \*--------------------------*/
 
-@media (min-width: 400px) {
+@media (min-width: 25rem) {
   .container {
     padding: 1.5rem;
   }
@@ -196,7 +197,7 @@ img {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 62rem) {
   .newsletter {
     display: flex;
     flex-direction: row-reverse;

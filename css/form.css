@@ -35,7 +35,7 @@
 
 .form.error-state .input {
   border: 1px solid var(--red);
-  background-color: rgb(248, 197, 197);
+  background-color: var(--soft-red);
   color: var(--red);
 }
 
@@ -70,5 +70,11 @@
       hsl(323, 94%, 50%),
       hsl(32, 96%, 52%)
     );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition-duration: 0.01ms;
   }
 }
